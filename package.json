@@ -1,0 +1,38 @@
+{
+    "name": "media-player",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "tauri:dev": "tauri dev",
+        "build": "vue-tsc --noEmit && vite build && tauri build",
+        "lint:fix": "eslint src --fix && stylelint src --fix"
+    },
+    "dependencies": {
+        "@tauri-apps/api": "^1.0.0-beta-rc.3",
+        "@tauri-apps/cli": "^1.0.0-beta-rc.4",
+        "@vueuse/core": "^4.9.1",
+        "phosphor-vue": "^4.2.1",
+        "vue": "^3.0.5"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.3.2",
+        "@tailwindcss/typography": "^0.4.0",
+        "@typescript-eslint/eslint-plugin": "^4.22.0",
+        "@typescript-eslint/parser": "^4.22.0",
+        "@vitejs/plugin-vue": "^1.2.2",
+        "@vue/compiler-sfc": "^3.0.5",
+        "autoprefixer": "^10.2.5",
+        "eslint": "^7.25.0",
+        "eslint-plugin-vue": "^7.9.0",
+        "postcss": "^8.2.13",
+        "stylelint": "^13.13.1",
+        "stylelint-config-idiomatic-order": "^8.1.0",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-order": "^4.1.0",
+        "tailwindcss": "^2.1.2",
+        "typescript": "^4.1.3",
+        "vite": "^2.2.3",
+        "vue-tsc": "^0.1.0"
+    }
+}

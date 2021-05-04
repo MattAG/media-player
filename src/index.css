@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.spinner {
+		@apply animate-spin rounded-full border-8 border-grey-200;
+
+		border-top-color: #60a5fa;
+	}
+}
+
+body,
+#app {
+	@apply w-screen h-screen bg-black text-grey-100;
+}
+
+h3 {
+	@apply py-2 font-semibold text-2xl;
+}
+
+input[type="text"] {
+	@apply px-1 py-0.5 border-grey-300;
+}
+
+button:disabled {
+	@apply bg-grey-500 cursor-default;
+}
